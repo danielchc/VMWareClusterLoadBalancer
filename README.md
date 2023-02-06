@@ -7,7 +7,7 @@ This PowerShell script that can move virtual machines between hosts in an ESXi c
 ### Params:
  - **vCenter**: vSphere Appliance
  - **TargetCluster**: Cluster
- - **MemoryThreshold** and **CPUThreshold **:  Minimum Host Load Percentage to move VMs
+ - **MemoryThreshold** and **CPUThreshold**:  Minimum Host Load Percentage to move VMs
  - **DiffMemoryThreshold** and **DiffCPUThreshold**: Minimum difference between the load of the host with the highest load and the one with the least load.
  - **User** and **Password**:  vSphere Appliance credentials
  - **IterationMax**: Maximum number of VMs to move

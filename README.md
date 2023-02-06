@@ -11,8 +11,9 @@ This PowerShell script that can move virtual machines between hosts in an ESXi c
  - **DiffMemoryThreshold** and **DiffCPUThreshold**: Minimum difference between the load of the host with the highest load and the one with the least load.
  - **User** and **Password**:  vSphere Appliance credentials
  - **IterationMax**: Maximum number of VMs to move
+ - **Interval**: Seconds between iterations
 
 ### Example
 ``` powershell
- ./VMWareClusterLoadBalancer.ps1 -vCenter vcsa.vsphere.local  -TargetCluster cluster01 -MemoryThreshold 80 -CPUThreshold 80 -DiffCPUThreshold 5 -DiffMemoryThreshold 5 -User administrator@vsphere.local -Password p4ssw0rd  -IterationMax 10
+ ./VMWareClusterLoadBalancer.ps1 -vCenter vcsa.vsphere.local  -TargetCluster cluster01 -MemoryThreshold 80 -CPUThreshold 80 -DiffCPUThreshold 5 -DiffMemoryThreshold 5 -User administrator@vsphere.local -Password p4ssw0rd  -IterationMax 10 -Interval 30
 ```
